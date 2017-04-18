@@ -14,8 +14,9 @@ from pybrain.supervised.trainers import BackpropTrainer
 from pybrain.structure import *
 from pybrain.datasets import *
 from pybrain.structure.modules import *
+import os
 #%matplotlib inline
-
+base_path = os.path.join(os.getcwd(),'daily_dataset')
 
 # In[ ]:
 
@@ -41,7 +42,8 @@ case = int(input())
 # In[ ]:
 
 if case == 1:
-    url = 'E:\Lecs\IIIT\SMAI\Project\Data\\Nifty Historical Daily.csv'
+    url =os.path.join(base_path, 'Nifty_Historical_Daily.csv')
+    print(url)
 elif case == 2:
     url = 'E:\Lecs\IIIT\SMAI\Project\Data\\TCS Historical Daily.csv'
 elif case == 3:
@@ -219,6 +221,3 @@ plt.show()
 
 
 # In[ ]:
-
-
-

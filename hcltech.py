@@ -260,10 +260,10 @@ if __name__ == '__main__':
     predicted4, test_label4, train_feature4, train_label4, test_feature4 =  svm_rbf(feature4, label_list)
     print "-----------------------------------------------------------------------"
     
-    plotting_svm(predicted1, test_label1,"Plots/hcl/hcltech1_22_apr_rbf.jpg",'r')
-    plotting_svm(predicted2, test_label2,"Plots/hcl/hcltech2_22_apr_rbf.jpg",'g')
-    plotting_svm(predicted3, test_label3,"Plots/hcl/hcltech3_22_apr_rbf.jpg",'b')
-    plotting_svm(predicted4, test_label4,"Plots/hcl/hcltech4_22_apr_rbf.jpg",'y')
+    plotting_svm(predicted1, test_label1,"Plots/hcl/hcltech1_22_apr_rbf.png",'r')
+    plotting_svm(predicted2, test_label2,"Plots/hcl/hcltech2_22_apr_rbf.png",'g')
+    plotting_svm(predicted3, test_label3,"Plots/hcl/hcltech3_22_apr_rbf.png",'b')
+    plotting_svm(predicted4, test_label4,"Plots/hcl/hcltech4_22_apr_rbf.png",'y')
 
     print
     print "*******************************RNN*************************************"
@@ -300,8 +300,8 @@ if __name__ == '__main__':
     predicted_NN_4=neural_networks(train_feature4, train_label4, test_feature4, test_label4)
     print "-----------------------------------------------------------------------"
    
-    plotting_svm(predicted_NN_1, test_label1,"Plots/hcl/hcltech1_22_apr_NN.jpg",'r')
-    plotting_svm(predicted_NN_2, test_label2,"Plots/hcl/hcltech2_22_apr_NN.jpg",'g')
-    plotting_svm(predicted_NN_2, test_label3,"Plots/hcl/hcltech3_22_apr_NN.jpg",'b')
-    plotting_svm(predicted_NN_2, test_label4,"Plots/hcl/hcltech4_22_apr_NN.jpg",'y')
+    plotting_svm(predicted_NN_1, test_label1,"Plots/hcl/hcltech1_22_apr_NN.png",'r')
+    plotting_svm(predicted_NN_2, test_label2,"Plots/hcl/hcltech2_22_apr_NN.png",'g')
+    plotting_svm(predicted_NN_2, test_label3,"Plots/hcl/hcltech3_22_apr_NN.png",'b')
+    plotting_svm(predicted_NN_2, test_label4,"Plots/hcl/hcltech4_22_apr_NN.png",'y')
 
